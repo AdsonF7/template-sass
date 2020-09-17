@@ -14,9 +14,6 @@
     color: $dark;
 }
 
-.btn-block {
-    width: -webkit-fill-available;
-}
 
 .btn:focus:not(.btn-link) {
     box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
@@ -33,7 +30,7 @@
 }
 
 .btn-primary:hover:not(.btn-link) {
-    background: darken($color: $primary, $amount: 5);
+    background: darken($color: $primary, $amount: 5) !important;
 }
 
 .btn-secondary {
@@ -43,7 +40,7 @@
 }
 
 .btn-secondary:hover:not(.btn-link) {
-    background: darken($color: $secondary, $amount: 5);
+    background: darken($color: $secondary, $amount: 5) !important;
 }
 
 .btn-warning {
@@ -53,7 +50,7 @@
 }
 
 .btn-warning:hover:not(.btn-link) {
-    background: darken($color: $warning, $amount: 5);
+    background: darken($color: $warning, $amount: 5) !important;
 }
 
 .btn-danger {
@@ -63,7 +60,7 @@
 }
 
 .btn-danger:hover:not(.btn-link) {
-    background: darken($color: $danger, $amount: 5);
+    background: darken($color: $danger, $amount: 5) !important;
 }
 
 .btn-success {
@@ -73,7 +70,7 @@
 }
 
 .btn-success:hover:not(.btn-link) {
-    background: darken($color: $success, $amount: 5);
+    background: darken($color: $success, $amount: 5) !important;
 }
 
 .btn-link {
@@ -91,4 +88,8 @@
     margin: 0px;
     line-height: 0px;
     // height: 20px;
+}
+
+.btn-block {
+    width: -webkit-fill-available;
 }
