@@ -1,0 +1,277 @@
+// Body
+
+$lights: #dfe6e9;
+$midnigth: #2c3e50;
+$silver: #bdc3c7;
+$clouds: #ecf0f1;
+$grey: rgba(255, 255, 255, 0.7);
+
+$color1: rgba(255, 255, 255, 0.7);
+$color2: rgba(0, 0, 0, 0.7);
+
+$body-bg: #faf6f6;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$small-font: 15px;
+$medium-font: 20px;
+$big-font: 25px;
+
+
+$middle-border-radius: 6px;
+
+$middle-padding: 6px;
+$big-padding: 20px;
+
+$middle-border: 1.5px;
+$border-big: 2px;
+$primary-color: #e74c3c;
+$secondary-color: white;
+
+$font-primary-color: white;
+$font-secondary-color: #2d3436;
+
+// $dark: #2d3436;
+// $light: white;
+
+$light: #ecf0f1;
+$dark: #2c3e50;
+
+$default: #eee4e4;
+// $primary: #3867d6;
+$secondary: #bdc3c7;
+$warning: #f39c12;
+$danger: #d46215;
+$success: #27ae60;
+
+$primary: #0984e3;
+// $secondary: #7f8c8d;
+// $default: #ecf0f1;
+// $success: #27ae60;
+
+
+body {
+  color: $dark;
+  background-color: lighten($color: $primary-color, $amount: 30);
+}
+
+// COLORS
+
+.radio {
+
+  input[type="radio"] {
+
+    &:focus {
+
+      &::after {
+        box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
+      }
+    }
+
+    &::after {
+      border: 3px solid $primary;
+      background-color: $secondary-color;
+      box-shadow: 0px 0px 0px 0px transparentize($color: $primary, $amount: 0.5);
+    }
+
+    &::before {
+      background: $primary;
+    }
+  }
+}
+
+.checkbox {
+
+  input[type="checkbox"] {
+
+    &:focus {
+
+      &::after {
+        box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
+      }
+    }
+
+    &::after {
+      border: 3px solid $primary;
+      background-color: $secondary-color;
+      box-shadow: 0px 0px 0px 0px transparentize($color: $primary, $amount: 0.5);
+    }
+
+    &::before {
+      border: 3px solid white; 
+    }
+
+    &:checked {
+
+      &::after {
+        background: $primary;
+      }
+    }
+  }
+}
+
+.badge {
+  background: $default;
+  color: $dark;
+
+  &-primary {
+    background: $primary;
+    color: $light;
+  }
+
+  &-secondary {
+    background: $secondary;
+    color: $light;
+  }
+
+  &-danger {
+    background: $danger;
+    color: $light;
+  }
+
+  &-warning {
+    background: $warning;
+    color: $light;
+  }
+
+  &-success {
+    background: $success;
+    color: $light;
+  }
+}
+
+.btn {
+  
+
+  &:focus:not(.btn-link) {
+    box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
+  }
+
+  &:hover:not(.btn-link) {
+    background: darken($color: $default, $amount: 5);
+  }
+
+  &-primary {
+    background: $primary;
+    border-color: $primary !important;
+    color: $light;
+
+    &:hover:not(.btn-link) {
+      background: darken($color: $primary, $amount: 5);
+    }
+  }
+
+  &-secondary {
+    background: $secondary;
+    border-color: $secondary !important;
+    color: $light;
+
+    &:hover:not(.btn-link) {
+      background: darken($color: $secondary, $amount: 5);
+    }
+  }
+
+  &-warning {
+    background: $warning;
+    border-color: $warning !important;
+    color: $light;
+
+    &:hover:not(.btn-link) {
+      background: darken($color: $warning, $amount: 5);
+    }
+  }
+
+  &-danger {
+    background: $danger;
+    border-color: $danger !important;
+    color: $light;
+
+    &:hover:not(.btn-link) {
+      background: darken($color: $danger, $amount: 5);
+    }
+  }
+
+  &-success {
+    background: $success;
+    border-color: $success !important;
+    color: $light;
+
+    &:hover:not(.btn-link) {
+      background: darken($color: $success, $amount: 5);
+    }
+  }
+
+  &-link {
+    color: inherit;
+    background: none;
+  }
+}
+
+.panel {
+  border-color: darken($color: $secondary-color, $amount: 30) !important;
+  color: $dark;
+
+  &-header {
+    border-bottom-color: darken($color: $secondary-color, $amount: 30) !important;
+  }
+
+  &-content {
+    
+  }
+}
+
+.table {
+
+  tr {
+    border-top-color: lighten($color: $primary-color, $amount: 5) !important;
+  }
+
+  tbody {
+
+    tr:last-child {
+      border-bottom-color: lighten($color: $primary-color, $amount: 5) !important;
+    }
+  }
+}
+// PADDING MARGIN BORDER
+
+.panel {
+  padding: $big-padding;
+
+  &-header {
+      padding-bottom: $big-padding;
+  }
+
+  &-content {
+      padding-top: $middle-padding;
+  }
+}
+
+.table {
+
+  tr {
+    border-top: $middle-border solid;
+  }
+
+  tbody {
+
+    tr:last-child {
+      border-bottom: $middle-border solid;
+    }
+  }
+}

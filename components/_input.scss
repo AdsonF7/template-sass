@@ -1,0 +1,54 @@
+$background: $primary-color;
+$font-color: $dark;
+$border-color: darken($color: $background, $amount: 10);
+$shadow: transparentize($color: $background, $amount: 0.5);
+
+.form-input {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding-right: 8px;
+    margin-bottom: 20px;
+}
+
+.form-input label {
+    margin: 0px 4px;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.form-input .error {
+    color: #fff;
+    margin: 4px;
+    margin-right: -4px;
+    border-radius: $middle-border-radius;
+    background: #f04;
+    li {
+        padding: 10px;
+    }
+    
+}
+
+.form-input input {
+    font-family: inherit;
+    font-size: inherit;
+    display: block;
+    width: 100%;
+    margin: 4px;
+    margin-top: 5px;
+    padding: 0px 10px;
+    padding-top: 4px;
+    height: 40px;
+    color: $font-color;
+    border-radius: $middle-border-radius;
+    border: $middle-border solid $default;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 0px 0px 0px 0px $shadow;
+    transition: box-shadow .35s;
+}
+
+.form-input input:focus {
+    box-shadow: 0px 0px 0px 4px $shadow;
+}
+

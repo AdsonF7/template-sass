@@ -1,0 +1,73 @@
+.icon {
+
+    &-add-24px-black {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url('../svg/add-black.svg');
+    }
+
+    &-add-24px-white {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url('../svg/add-white.svg');
+    }
+
+
+    &-delete-24px-black {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url('../svg/delete-black.svg');
+        background-size: 14px 14px;
+    }
+
+    &-delete-24px-white {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url('../svg/delete-white.svg');
+        background-size: 14px 14px;
+    }
+
+    &-edit-24px-black {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url('../svg/edit-black.svg');
+        background-size: 14px 14px;
+    }
+
+    &-edit-24px-white {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url('../svg/edit-white.svg');
+        background-size: 14px 14px;
+    }
+
+    &-view-24px-black {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url('../svg/view-black.svg');
+        background-size: 14px 14px;
+    }
+
+    &-view-24px-white {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url('../svg/view-white.svg');
+        background-size: 14px 14px;
+    }
+
+    &-arrowdown-black {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url('../svg/arrowdown-black.svg');
+        background-size: 14px 14px;
+    }
+}

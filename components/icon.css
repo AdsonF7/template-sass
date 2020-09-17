@@ -1,0 +1,109 @@
+.icon-add-24px-black {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/add-black.svg?71d57169e2637bb76ea13ca74190c50e);
+}
+
+.icon-add-24px-white {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/add-white.svg?5c05fb60883668787fbceb7ea4f5f347);
+}
+
+.icon-delete-24px-black {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/delete-black.svg?625839324f1eb606c6332e419d70d93f);
+    background-size: 14px 14px;
+}
+
+.icon-delete-24px-white {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/delete-white.svg?31b49961a92a87b3dcc7532ab01b3b5c);
+    background-size: 14px 14px;
+}
+
+.icon-edit-24px-black {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/edit-black.svg?393cab108988e0889f0e6a298750d6bd);
+    background-size: 14px 14px;
+}
+
+.icon-edit-24px-white {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/edit-white.svg?dd14d24fec63823d71a0dce3b46221e5);
+    background-size: 14px 14px;
+}
+
+.icon-view-24px-black {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/view-black.svg?a72dbdcfecaf18e773b8e594fe83195a);
+    background-size: 14px 14px;
+}
+
+.icon-view-24px-white {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/view-white.svg?944781380eb6baccc6e9cc1a638c3abd);
+    background-size: 14px 14px;
+}
+
+.icon-arrowdown-black {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/arrowdown-black.svg?f6bcfaaf47af201d22694929f6e5a1e0);
+    background-size: 14px 14px;
+}
+
+.icon-arrowdown-white {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/arrowdown-white.svg?f6bcfaaf47af201d22694929f6e5a1e0);
+    background-size: 14px 14px;
+}
+
+.icon-arrowup-black {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/arrowup-black.svg);
+    background-size: 14px 14px;
+}
+
+.icon-arrowup-white {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/arrowup-white.svg);
+    background-size: 14px 14px;
+}
+
+.icon-hyphen-black {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/hyphen-black.svg);
+    background-size: 14px 14px;
+}
+
+.icon-hyphen-white {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(/images/hyphen-white.svg);
+    background-size: 14px 14px;
+}

@@ -1,0 +1,53 @@
+.dialog {
+    max-width: 600px;
+    min-width: 600px;
+    position: relative;
+    margin: 100px auto;
+
+    &-title {
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    &-logo {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &-content {
+        border-radius: 6px;
+        background: white;
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .dialog {
+        margin-top: 20px;
+        min-width: auto;
+        max-width: max-content;
+        
+        &-logo {
+            margin-bottom: 10px;
+        }
+
+        &-content {
+            padding: 10px;
+            padding-bottom: 40px;
+            box-shadow: none;
+            padding-top: 40px;
+        }
+    }
+}
+
+.overlay {
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background: #000a;
+    width: 100%;
+    min-height: 100vh;
+}

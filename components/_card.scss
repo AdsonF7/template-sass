@@ -1,0 +1,28 @@
+$background-header: $primary-color;
+$background-body: lighten($color: $primary-color, $amount: 20);
+$font-color-header: $light;
+$font-color-body: $dark;
+$border-color: darken($color: $background-header, $amount: 10);
+$border-width: 3px;
+
+.card {
+    border-radius: $middle-border-radius;
+    margin: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-header {
+    color: $font-color-header;
+    background-color: $background-header;
+    font-weight: bold;
+    padding: $big-padding;
+    border-bottom: $border-width solid $border-color;
+}
+
+.card-body {
+    color: $font-color-body;
+    padding: $big-padding;
+    background-color: $background-body;
+}
+

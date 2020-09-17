@@ -1,0 +1,13 @@
+$background: $primary-color;
+$border-color: darken($color: $background, $amount: 10);
+$border-width: 3px;
+
+.list {
+    //background: $primary-color;
+    //padding: $big-padding;
+}
+
+.list li {
+    padding: 10px;
+    border-bottom: $border-width solid $border-color;
+}
