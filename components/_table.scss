@@ -9,27 +9,6 @@ $border-width: 3px;
     height: 100%;
 }
 
-/*
-.btn {
-    vertical-align: top;
-    margin: -5px 0px;
-    padding: 8px;
-    color: inherit;
-    border-radius: 15px;
-    cursor: pointer;
-    border: 1px solid darken($color: #fff, $amount: 10);
-    outline: none;
-    font-size: 10px;
-    background-color: transparent;
-    // background-color: lighten($color: $primary, $amount: 10);
-    transition: .2s;
-    &:hover {
-        background-color: darken($color: #fff, $amount: 10);
-        color: $primary;
-    }
-}
-*/
-
 .table {
     margin-top: 20px;
     table-layout: fixed;

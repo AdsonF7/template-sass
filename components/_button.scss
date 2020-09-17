@@ -1,81 +1,101 @@
 .btn {
     font-family: inherit;
-    box-sizing: border-box;
-    border: $middle-border solid;
-    border-radius: $middle-border-radius;
+    border: $big-border solid $default;
+    border-radius: 25px;
     margin: 4px;
     padding: 0px 17px;
     cursor: pointer;
     height: 40px;
+    font-weight: bold;
     font-size: inherit;
     outline: none;
-    border-color: $default !important;
-    background: $default;
+    background-color: transparent;
     color: $dark;
+    transition: .2s;
 }
-
-
+/*
+.btn {
+    vertical-align: top;
+    margin: -5px 0px;
+    padding: 8px;
+    color: inherit;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid darken($color: #fff, $amount: 10);
+    // background-color: lighten($color: $primary, $amount: 10);
+    transition: .2s;
+    &:hover {
+        background-color: darken($color: #fff, $amount: 10);
+        color: $primary;
+    }
+}
+*/
 .btn:focus:not(.btn-link) {
     box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
 }
 
 .btn:hover:not(.btn-link) {
-    background: darken($color: $default, $amount: 5);
+    background-color: darken($color: $default, $amount: 5);
 }
 
 .btn-primary {
-    background: $primary;
-    border-color: $primary !important;
+    background-color: $primary;
+    border-color: $light !important;
     color: $light;
 }
 
 .btn-primary:hover:not(.btn-link) {
-    background: darken($color: $primary, $amount: 5);
+    background-color: $light;
+    color: $primary;
 }
 
 .btn-secondary {
-    background: $secondary;
-    border-color: $secondary !important;
+    background-color: $secondary;
+    border-color: $light !important;
     color: $light;
 }
 
 .btn-secondary:hover:not(.btn-link) {
-    background: darken($color: $secondary, $amount: 5);
+    background-color: $light;
+    color: $secondary;
 }
 
 .btn-warning {
-    background: $warning;
-    border-color: $warning !important;
+    background-color: $warning;
+    border-color: $light !important;
     color: $light;
 }
 
 .btn-warning:hover:not(.btn-link) {
-    background: darken($color: $warning, $amount: 5);
+    background-color: $light;
+    color: $warning;
 }
 
 .btn-danger {
-    background: $danger;
-    border-color: $danger !important;
+    background-color: $danger;
+    border-color: $light !important;
     color: $light;
 }
 
 .btn-danger:hover:not(.btn-link) {
-    background: darken($color: $danger, $amount: 5);
+    background-color: $light;
+    color: $danger;
 }
 
 .btn-success {
-    background: $success;
-    border-color: $success !important;
+    background-color: $success;
+    border-color: $light !important;
     color: $light;
 }
 
 .btn-success:hover:not(.btn-link) {
-    background: darken($color: $success, $amount: 5);
+    background-color: $light;
+    color: $success;
 }
 
 .btn-link {
     color: inherit;
-    background: none;
+    background-color: none;
     border: 0px;
     padding: 0px;
     margin: 0px;

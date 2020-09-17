@@ -1,0 +1,94 @@
+.btn {
+    font-family: inherit;
+    box-sizing: border-box;
+    border: $middle-border solid $default;
+    border-radius: $middle-border-radius;
+    margin: 4px;
+    padding: 0px 17px;
+    cursor: pointer;
+    height: 40px;
+    font-size: inherit;
+    outline: none;
+    background: $default;
+    color: $dark;
+}
+
+
+.btn:focus:not(.btn-link) {
+    box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
+}
+
+.btn:hover:not(.btn-link) {
+    background: darken($color: $default, $amount: 5);
+}
+
+.btn-primary {
+    background: $primary;
+    border-color: $primary !important;
+    color: $light;
+}
+
+.btn-primary:hover:not(.btn-link) {
+    background: darken($color: $primary, $amount: 5);
+}
+
+.btn-secondary {
+    background: $secondary;
+    border-color: $secondary !important;
+    color: $light;
+}
+
+.btn-secondary:hover:not(.btn-link) {
+    background: darken($color: $secondary, $amount: 5);
+}
+
+.btn-warning {
+    background: $warning;
+    border-color: $warning !important;
+    color: $light;
+}
+
+.btn-warning:hover:not(.btn-link) {
+    background: darken($color: $warning, $amount: 5);
+}
+
+.btn-danger {
+    background: $danger;
+    border-color: $danger !important;
+    color: $light;
+}
+
+.btn-danger:hover:not(.btn-link) {
+    background: darken($color: $danger, $amount: 5);
+}
+
+.btn-success {
+    background: $success;
+    border-color: $success !important;
+    color: $light;
+}
+
+.btn-success:hover:not(.btn-link) {
+    background: darken($color: $success, $amount: 5);
+}
+
+.btn-link {
+    color: inherit;
+    background: none;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+}
+
+.btn-icon {
+    padding: 5px;
+    height: 27px;
+    margin: 0px;
+    line-height: 0px;
+    // height: 20px;
+}
+
+.btn-block {
+    width: -webkit-fill-available;
+}
