@@ -1,0 +1,99 @@
+$background-header: $primary-color;
+$border-color: darken($color: $background-header, $amount: 10);
+$border-width: 3px;
+
+.container {
+    overflow: hidden;
+    padding: 0px 20px;
+    background-color: darken($color: $background-header, $amount: 10);
+    height: 100%;
+}
+
+.btn {
+    vertical-align: top;
+    margin: -5px 0px;
+    padding: 8px;
+    color: inherit;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid darken($color: #fff, $amount: 10);
+    outline: none;
+    font-size: 10px;
+    background-color: transparent;
+    // background-color: lighten($color: $primary, $amount: 10);
+    transition: .2s;
+    &:hover {
+        background-color: darken($color: #fff, $amount: 10);
+        color: $primary;
+    }
+}
+
+.table {
+    margin-top: 20px;
+    table-layout: fixed;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    color: #cfefef;
+}
+
+.table thead tr{
+    background: $primary;
+    border-bottom: $border-width solid $border-color;
+}
+    
+.table thead tr > * {
+    padding: 8px;
+}
+    
+.table thead td {
+    display: none;
+}    
+  
+.table tbody tr {
+    background: $background-header;
+    border-bottom: $border-width solid $border-color;
+}
+
+.table tbody tr > * {
+    padding: 8px;
+}
+    
+.table tbody th {
+    display: none;
+    line-height: 20px;
+}
+    
+.table tbody td {
+    line-height: 20px;
+}
+
+
+@media screen and (max-width: 800px){
+    .table thead {
+        display: none;
+    }
+
+    .table tbody {
+        display: block;
+    }
+    
+    .table tbody tr {
+        margin-bottom: 10px;
+        overflow: hidden;
+        width: 100%;
+        display: block;    
+    }
+
+    .table tbody th {
+        float: left;
+        width: 50%;
+        display: block;
+    }
+
+    .table tbody td {
+        float: left;
+        width: 50%;
+        display: block;
+    }
+}
