@@ -4,18 +4,18 @@
     position: relative;
     margin: 100px auto;
 
-.dialog-title {
+.dialog .dialog-title {
     text-align: center;
     margin: 0px;
     margin-bottom: 20px;
 }
 
-.dialog-logo {
+.dialog .dialog-logo {
     margin-bottom: 30px;
     text-align: center;
 }
 
-.dialog-content {
+.dialog .dialog-content {
     border-radius: 6px;
     background: white;
     padding: 40px;
@@ -37,12 +37,13 @@
         margin-top: 20px;
         min-width: auto;
         max-width: max-content;
-        
-    .dialog-logo {
+    }
+
+    .dialog .dialog-logo {
         margin-bottom: 10px;
     }
 
-    .dialog-content {
+    .dialog .dialog-content {
         padding: 10px;
         padding-bottom: 40px;
         box-shadow: none;
