@@ -1,5 +1,6 @@
 $background-header: $primary-color;
 $background-body: lighten($color: $primary-color, $amount: 20);
+$background-body: lighten($color: $primary-color, $amount: 35);
 $font-color-header: $light;
 $font-color-body: $dark;
 $border-color: darken($color: $background-header, $amount: 10);

@@ -1,56 +1,65 @@
 .checkbox {
     min-height: 30px;
     display: block;
+}
 
-    input[type="checkbox"] {
-        position: relative;
-        margin: 5px;
-        outline: none;
+.checkbox input[type="checkbox"] {
+    position: relative;
+    margin: 4px;
+    outline: none;
+}
 
-        &::after {
-            content: "";
-            cursor: pointer;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-            margin: -3px;
-            margin-left: -1px;
-            border-radius: 7px;
-            box-sizing: border-box;
-            transition: box-shadow .35s;
-        }
+.checkbox input[type="checkbox"]:focus::after {
+    box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
+}
 
-        &::before {
-            content: "";
-            cursor: pointer;
-            display: none;
-            width: 9px;
-            height: 5px;
-            left: 3px;
-            top: 2px;
-            border-top: none;
-            border-right: none;
-            transform: rotate(-45deg);
-            position: absolute;
-        }
+.checkbox input[type="checkbox"]::after,
+.checkbox input[type="checkbox"]::before {
+    content: "";
+    cursor: pointer;
+}
 
-        + label {       
-            cursor: pointer;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none; 
-            user-select: none;
-        }
+.checkbox input[type="checkbox"]::after {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: -3px;
+    margin-left: -1px;
+    border-radius: 7px;
+    transition: box-shadow .35s;
+    border: 3px solid $primary;
+    background-color: $secondary-color;
+    box-shadow: 0px 0px 0px 0px transparentize($color: $primary, $amount: 0.5);
+}
 
-        &:checked {
+.checkbox input[type="checkbox"]::before {
+    display: none;
+    width: 12px;
+    height: 8px;
+    left: 3px;
+    top: 2px;
+    border: 3px solid white; 
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    position: absolute;
+}
 
-            &::before {
-                display: block;
-            }
-        }
+.checkbox input[type="checkbox"] + label {       
+    cursor: pointer;
+    margin-left: 6px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
 
+.checkbox input[type="checkbox"]:checked::before {
+    display: block;
+}
 
-    }
+.checkbox input[type="checkbox"]:checked::after {
+    background: $primary;
 }

@@ -95,35 +95,6 @@ body {
   }
 }
 
-.checkbox {
-
-  input[type="checkbox"] {
-
-    &:focus {
-
-      &::after {
-        box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
-      }
-    }
-
-    &::after {
-      border: 3px solid $primary;
-      background-color: $secondary-color;
-      box-shadow: 0px 0px 0px 0px transparentize($color: $primary, $amount: 0.5);
-    }
-
-    &::before {
-      border: 3px solid white; 
-    }
-
-    &:checked {
-
-      &::after {
-        background: $primary;
-      }
-    }
-  }
-}
 
 .badge {
   background: $default;
@@ -164,9 +135,6 @@ body {
     border-bottom-color: darken($color: $secondary-color, $amount: 30) !important;
   }
 
-  &-content {
-    
-  }
 }
 
 .table {

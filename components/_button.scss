@@ -46,6 +46,7 @@
 
 .btn-primary:hover:not(.btn-link) {
     background-color: $light;
+    border-color: $primary !important;
     color: $primary;
 }
 
@@ -57,6 +58,7 @@
 
 .btn-secondary:hover:not(.btn-link) {
     background-color: $light;
+    border-color: $secondary !important;
     color: $secondary;
 }
 
@@ -68,6 +70,7 @@
 
 .btn-warning:hover:not(.btn-link) {
     background-color: $light;
+    border-color: $warning !important;
     color: $warning;
 }
 
@@ -79,6 +82,7 @@
 
 .btn-danger:hover:not(.btn-link) {
     background-color: $light;
+    border-color: $danger !important;
     color: $danger;
 }
 
@@ -90,6 +94,7 @@
 
 .btn-success:hover:not(.btn-link) {
     background-color: $light;
+    border-color: $success !important;
     color: $success;
 }
 
