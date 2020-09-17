@@ -30,7 +30,7 @@
 }
 
 .btn-primary:hover:not(.btn-link) {
-    background: darken($color: $primary, $amount: 5) !important;
+    background: darken($color: $primary, $amount: 5);
 }
 
 .btn-secondary {
@@ -40,7 +40,7 @@
 }
 
 .btn-secondary:hover:not(.btn-link) {
-    background: darken($color: $secondary, $amount: 5) !important;
+    background: darken($color: $secondary, $amount: 5);
 }
 
 .btn-warning {
@@ -50,7 +50,7 @@
 }
 
 .btn-warning:hover:not(.btn-link) {
-    background: darken($color: $warning, $amount: 5) !important;
+    background: darken($color: $warning, $amount: 5);
 }
 
 .btn-danger {
@@ -60,7 +60,7 @@
 }
 
 .btn-danger:hover:not(.btn-link) {
-    background: darken($color: $danger, $amount: 5) !important;
+    background: darken($color: $danger, $amount: 5);
 }
 
 .btn-success {
@@ -70,7 +70,7 @@
 }
 
 .btn-success:hover:not(.btn-link) {
-    background: darken($color: $success, $amount: 5) !important;
+    background: darken($color: $success, $amount: 5);
 }
 
 .btn-link {
