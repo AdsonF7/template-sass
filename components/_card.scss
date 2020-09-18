@@ -1,29 +1,45 @@
-$background-header: $primary-color;
-$background-body: lighten($color: $primary-color, $amount: 20);
-$background-body: lighten($color: $primary-color, $amount: 35);
-$font-color-header: $light;
-$font-color-body: $dark;
-$border-color: darken($color: $background-header, $amount: 10);
+$background-header-light: $primary-color;
+$background-body-light: darken($color: $light, $amount: 2);
+$font-color-header-light: $light;
+$font-color-body-light: $dark;
+
+$background-header-dark: $primary-color;
+$background-body-dark: lighten($color: $dark, $amount: 2);
+$font-color-header-dark: $dark;
+$font-color-body-dark: $light;
+$border-color: darken($color: $background-header-light, $amount: 10);
 $border-width: 3px;
+$padding: $big-padding;
 
 .card {
     border-radius: $middle-border-radius;
-    margin: 10px;
+    margin: auto;
     margin-bottom: 20px;
     overflow: hidden;
 }
 
-.card-header {
-    color: $font-color-header;
-    background-color: $background-header;
+.card.dark .card-header {
+    color: $font-color-header-dark;
+    background-color: $background-header-light;
+}
+
+.card.dark .card-body {
+    color: $font-color-body-dark;
+    background-color: $background-body-dark;
+}
+
+
+.card .card-header {
+    color: $font-color-header-light;
+    background-color: $background-header-light;
     font-weight: bold;
-    padding: $big-padding;
+    padding: $padding;
     border-bottom: $border-width solid $border-color;
 }
 
-.card-body {
-    color: $font-color-body;
-    padding: $big-padding;
-    background-color: $background-body;
+.card .card-body {
+    color: $font-color-body-light;
+    padding: $padding;
+    background-color: $background-body-light;
 }
 

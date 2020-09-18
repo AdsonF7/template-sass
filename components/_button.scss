@@ -1,11 +1,14 @@
+$border-width: $big-border;
+$border-radius: $middle-border-radius;
+
 .btn {
     font-family: inherit;
-    border: $big-border solid $default;
-    border-radius: 25px;
+    border: $border-width solid $default;
+    border-radius: $border-radius;
     margin: 4px;
     padding: 0px 17px;
     cursor: pointer;
-    height: 40px;
+    height: 50px;
     font-weight: bold;
     font-size: inherit;
     outline: none;
@@ -13,25 +16,9 @@
     color: $dark;
     transition: .2s;
 }
-/*
-.btn {
-    vertical-align: top;
-    margin: -5px 0px;
-    padding: 8px;
-    color: inherit;
-    border-radius: 15px;
-    cursor: pointer;
-    border: 1px solid darken($color: #fff, $amount: 10);
-    // background-color: lighten($color: $primary, $amount: 10);
-    transition: .2s;
-    &:hover {
-        background-color: darken($color: #fff, $amount: 10);
-        color: $primary;
-    }
-}
-*/
+
 .btn:focus:not(.btn-link) {
-    box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
+    @include shadow;
 }
 
 .btn:hover:not(.btn-link) {
@@ -40,61 +27,56 @@
 
 .btn-primary {
     background-color: $primary;
-    border-color: $light !important;
+    border-color: $primary;
     color: $light;
 }
 
 .btn-primary:hover:not(.btn-link) {
     background-color: $light;
-    border-color: $primary !important;
     color: $primary;
 }
 
 .btn-secondary {
     background-color: $secondary;
-    border-color: $light !important;
+    border-color: $secondary;
     color: $light;
 }
 
 .btn-secondary:hover:not(.btn-link) {
     background-color: $light;
-    border-color: $secondary !important;
     color: $secondary;
 }
 
 .btn-warning {
     background-color: $warning;
-    border-color: $light !important;
+    border-color: $warning;
     color: $light;
 }
 
 .btn-warning:hover:not(.btn-link) {
     background-color: $light;
-    border-color: $warning !important;
     color: $warning;
 }
 
 .btn-danger {
     background-color: $danger;
-    border-color: $light !important;
+    border-color: $danger;
     color: $light;
 }
 
 .btn-danger:hover:not(.btn-link) {
     background-color: $light;
-    border-color: $danger !important;
     color: $danger;
 }
 
 .btn-success {
     background-color: $success;
-    border-color: $light !important;
+    border-color: $success;
     color: $light;
 }
 
 .btn-success:hover:not(.btn-link) {
     background-color: $light;
-    border-color: $success !important;
     color: $success;
 }
 

@@ -39,12 +39,16 @@ $middle-padding: 6px;
 $big-padding: 20px;
 
 $middle-border: 1.5px;
-$big-border: 2px;
+$big-border: 3px;
 $primary-color: #e74c3c;
 $secondary-color: white;
 
 $font-primary-color: white;
 $font-secondary-color: #2d3436;
+
+@mixin shadow {
+  box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
+}
 
 // $dark: #2d3436;
 // $light: white;
@@ -67,7 +71,7 @@ $primary: #0984e3;
 
 body {
   color: $dark;
-  background-color: lighten($color: $primary-color, $amount: 30);
+  background-color: $dark;
 }
 
 // COLORS
@@ -127,15 +131,6 @@ body {
 }
 
 
-.panel {
-  border-color: darken($color: $secondary-color, $amount: 30) !important;
-  color: $dark;
-
-  &-header {
-    border-bottom-color: darken($color: $secondary-color, $amount: 30) !important;
-  }
-
-}
 
 .table {
 
@@ -152,17 +147,6 @@ body {
 }
 // PADDING MARGIN BORDER
 
-.panel {
-  padding: $big-padding;
-
-  &-header {
-      padding-bottom: $big-padding;
-  }
-
-  &-content {
-      padding-top: $middle-padding;
-  }
-}
 
 .table {
 

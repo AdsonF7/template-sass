@@ -3,11 +3,12 @@ $font-color: $light;
 $border-color: darken($color: $background, $amount: 10);
 $btn-hover: lighten($color: $background, $amount: 10);
 $border-width: 3px;
+$padding: $big-padding;
 
 .navbar {
   display: block;
   background-color: $background;
-  padding: 10px;
+  padding: $padding;
   border-bottom: $border-width solid $border-color;
 }
 
@@ -16,9 +17,9 @@ $border-width: 3px;
   border-radius: 1px;
   height: 2px;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: -6px;
-  background: $font-color;
+  margin-top: 7px;
+  margin-bottom: -3px;
+  background-color: $font-color;
 }
 
 .navbar-collapse {
@@ -35,8 +36,8 @@ $border-width: 3px;
   cursor: pointer;
   height: 34.44px;
   width: 34.44px;
-  background: transparent;
-  border: 1px solid $border-color;
+  background-color: transparent;
+  border: $border-width solid $border-color;
   border-radius: 0.5em;
 }
 
@@ -66,7 +67,7 @@ $border-width: 3px;
   color: $font-color;
   cursor: pointer;
   border: none;
-  background: none;
+  background-color: none;
   display: block;
   padding: 10px 17px;
   line-height: 15px;
@@ -75,7 +76,7 @@ $border-width: 3px;
 }
 
 .navbar .nav-item a:hover {
-  background: $btn-hover;
+  background-color: $btn-hover;
 }
 
 .navbar .nav-item:not(:last-child) {
@@ -106,7 +107,7 @@ $border-width: 3px;
   }
 
   .navbar .navbar-toggler:checked + .navbar-toggler-label {
-    background: $btn-hover;
+    background-color: $btn-hover;
   }
 
   .navbar .navbar-toggler:not(:checked) ~ .navbar-collapse {
@@ -114,7 +115,7 @@ $border-width: 3px;
   }
 
   .navbar .navbar-toggler:checked ~ .navbar-collapse {
-    padding-top: 10px;
+    padding-top: $padding;
   }
   
   .navbar .nav-container {
@@ -123,7 +124,7 @@ $border-width: 3px;
   }
 
   .navbar .nav-container:not(:last-child) {
-    border-bottom: 3px solid $border-color;
+    border-bottom: $border-width solid $border-color;
   }
 
   .navbar .nav-item {
@@ -148,7 +149,5 @@ $border-width: 3px;
 
 @media screen and (max-width: 640px) {
 
-  .navbar .item {
-
-  }
+  
 }

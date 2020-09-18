@@ -1,13 +1,22 @@
+$border-width: 3px;
+$font-color: $dark;
+$border-color: darken($color: $primary-color, $amount: 10);
+$padding: $big-padding;
+$padding-body: $middle-padding; 
+
 .panel {
+    color: $font-color;
     margin: 10px;
-    border: 2px solid;
+    border: $border-width solid $border-color;
     margin-bottom: 40px;
+    padding: $padding;
 }
 
 .panel-header {
-    border-bottom: 1px solid;
+    padding-bottom: $padding;
+    border-bottom: $border-width solid $border-color;
 }
 
-.panel-content {
-
+.panel-body {
+    padding-top: $padding-body;
 }
