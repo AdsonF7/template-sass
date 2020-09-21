@@ -1,45 +1,39 @@
-$background-header-light: $primary-color;
-$background-body-light: darken($color: $light, $amount: 2);
-$font-color-header-light: $light;
-$font-color-body-light: $dark;
+@mixin card-light { 
+    background-color: $light5;
+    @include color-dark;
+}
 
-$background-header-dark: $primary-color;
-$background-body-dark: lighten($color: $dark, $amount: 2);
-$font-color-header-dark: $dark;
-$font-color-body-dark: $light;
-$border-color: darken($color: $background-header-light, $amount: 10);
-$border-width: 3px;
-$padding: $big-padding;
+@mixin card-dark { 
+    background-color: $dark5;
+    @include color-light;
+}
 
 .card {
-    border-radius: $middle-border-radius;
     margin: auto;
     margin-bottom: 20px;
     overflow: hidden;
+    @include card-light;
+}
+
+.card.dark {
+    @include card-dark;
 }
 
 .card.dark .card-header {
-    color: $font-color-header-dark;
-    background-color: $background-header-light;
+    
 }
 
 .card.dark .card-body {
-    color: $font-color-body-dark;
-    background-color: $background-body-dark;
+
 }
 
 
 .card .card-header {
-    color: $font-color-header-light;
-    background-color: $background-header-light;
     font-weight: bold;
-    padding: $padding;
-    border-bottom: $border-width solid $border-color;
+    @include padding;
 }
 
 .card .card-body {
-    color: $font-color-body-light;
-    padding: $padding;
-    background-color: $background-body-light;
+    @include padding;
 }
 

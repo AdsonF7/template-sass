@@ -1,28 +1,42 @@
 $border-width: $big-border;
-$border-radius: $middle-border-radius;
+@mixin btn-light {
+    @include border-light;
+    background-color: $light10;
+    @include color-dark;
+    &:hover {
+        background-color: $dark10;
+        @include color-light;
+    }
+}
+
+@mixin btn-dark {
+    @include border-dark;
+    background-color: $dark10;
+    @include color-light;
+    &:hover {
+        background-color: $light10;
+        @include color-dark;
+    }
+}
 
 .btn {
     font-family: inherit;
-    border: $border-width solid $default;
-    border-radius: $border-radius;
-    margin: 4px;
+    @include btn-light;
     padding: 0px 17px;
     cursor: pointer;
     height: 50px;
     font-weight: bold;
     font-size: inherit;
     outline: none;
-    background-color: transparent;
-    color: $dark;
     transition: .2s;
+}
+
+.btn.dark {
+    @include btn-dark;
 }
 
 .btn:focus:not(.btn-link) {
     @include shadow;
-}
-
-.btn:hover:not(.btn-link) {
-    background-color: darken($color: $default, $amount: 5);
 }
 
 .btn-primary {
@@ -94,7 +108,6 @@ $border-radius: $middle-border-radius;
     height: 27px;
     margin: 0px;
     line-height: 0px;
-    // height: 20px;
 }
 
 .btn-block {

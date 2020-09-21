@@ -6,8 +6,6 @@ $silver: #bdc3c7;
 $clouds: #ecf0f1;
 $grey: rgba(255, 255, 255, 0.7);
 
-$color1: rgba(255, 255, 255, 0.7);
-$color2: rgba(0, 0, 0, 0.7);
 
 $body-bg: #faf6f6;
 
@@ -43,13 +41,6 @@ $big-border: 3px;
 $primary-color: #e74c3c;
 $secondary-color: white;
 
-$font-primary-color: white;
-$font-secondary-color: #2d3436;
-
-@mixin shadow {
-  box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
-}
-
 // $dark: #2d3436;
 // $light: white;
 
@@ -57,23 +48,25 @@ $light: #ecf0f1;
 $dark: #2c3e50;
 
 $default: #eee4e4;
+// $default: #ecf0f1;
+$primary: #0984e3;
 // $primary: #3867d6;
 $secondary: #bdc3c7;
+// $secondary: #7f8c8d;
 $warning: #f39c12;
 $danger: #d46215;
 $success: #27ae60;
-
-$primary: #0984e3;
-// $secondary: #7f8c8d;
-// $default: #ecf0f1;
 // $success: #27ae60;
-
 
 body {
   color: $dark;
-  background-color: $dark;
+  background-color: $light;
 }
 
+body.dark {
+  color: $light;
+  background-color: $dark;
+}
 // COLORS
 
 .radio {
@@ -161,3 +154,104 @@ body {
     }
   }
 }
+
+$border-width: 3px;
+$border-radius: 10px;
+
+@mixin shadow {
+  box-shadow: 0px 0px 0px 4px transparentize($color: $primary, $amount: 0.5);
+}
+
+$border-radius: 20px;
+$border-width: 3px;
+
+$light: #ecf0f1;
+$dark: #2c3e50;
+
+$primary: #0984e3;
+$secondary: #bdc3c7;
+
+
+$light-10: lighten($color: $light, $amount: 10);
+$dark-10: darken($color: $dark, $amount: 10);
+$dark5: lighten($color: $dark, $amount: 5);
+$light5: darken($color: $light, $amount: 5);
+$dark10: lighten($color: $dark, $amount: 10);
+$light10: darken($color: $light, $amount: 10);
+
+@mixin btn-primary { background-color: $primary; }
+
+@mixin border-primary { 
+  border: $border-width solid $primary;
+  border-radius: $border-radius;
+}
+
+@mixin border-light {
+  border: $border-width solid $light10;
+  border-radius: $border-radius;
+}
+
+@mixin border-dark {
+  border: $border-width solid $dark10;
+  border-radius: $border-radius;
+}
+
+@mixin color-dark { color: $dark10; }
+
+@mixin color-light { color: $light10; }
+
+@mixin padding { padding: 20px; }
+
+@mixin card-light { background-color: $light5; }
+
+@mixin card-dark { background-color: $dark5; }
+/*
+
+
+.card {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  margin-top: 100px;
+  @include card-light;
+}
+
+.card.dark {
+  @include card-dark;
+}
+
+.card .card-icon {
+  background-image: url('https://www.pngkit.com/png/full/328-3285413_person-comments-windows-10-person-icon.png');
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: $light5;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: -70px;
+}
+
+.btn {
+  height: 50px;
+  cursor: pointer;
+  padding: 0px 10px;
+  outline: none;
+  font-weight: bold;
+  transition: .2s;
+  @include btn-light;
+}
+
+.btn.dark {
+  @include btn-dark;
+}
+
+.btn.btn-block {
+  width: -webkit-fill-available;
+  margin: 0px 4px;
+}
+
+
+
+*/

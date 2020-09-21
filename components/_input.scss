@@ -1,65 +1,58 @@
-$background-light: darken($color: $light, $amount: 5);
-$font-color-light: $dark;
-$background-dark: lighten($color: $dark, $amount: 5);
-$font-color-dark: $light;
-$border-color-light: darken($color: $background-light, $amount: 8);
-$border-color-dark: lighten($color: $background-dark, $amount: 8);;
-$border-width: $big-border;
+@mixin input-light {
+    & input {
+        @include border-light;
+        background-color: $light-10;
+        @include color-dark;
+    }
+    & label { @include color-dark; }
+}
+  
+@mixin input-dark {
+    & input {
+        @include border-dark;
+        background-color: $dark-10;
+        @include color-light;
+    }
+    & label { @include color-light; }
+}
 
 .form-input {
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    padding-right: 8px;
+    margin: -4px;
     margin-bottom: 20px;
+    @include input-light;
 }
 
-.form-input.dark input {
-    background-color: $background-dark;
-    color: $font-color-dark;
-    border: $border-width solid $border-color-dark;
-}
-
-.form-input.dark label {
-    color: $font-color-dark;
+.form-input.dark {
+    @include input-dark;
 }
 
 .form-input label {
     margin: 0px 4px;
-    font-weight: bold;
-    font-size: inherit;
-    color: $font-color-light;
 }
 
-.form-input .error {
-    color: #fff;
+.form-input input {
+    display: block;
+    width: -webkit-fill-available;
     margin: 4px;
-    margin-right: -4px;
+    padding: 0px 10px;
+    height: 50px;
+    outline: none;
+    transition: box-shadow .35s;
+}
+
+
+.form-input .error {
+    @include color-light;
+    margin: 4px;
     border-radius: $middle-border-radius;
     background: #f04;
     li {
         padding: 10px;
     }
-    
 }
 
-.form-input input {
-    font-family: inherit;
-    font-size: inherit;
-    display: block;
-    width: 100%;
-    margin: 4px;
-    margin-top: 5px;
-    padding: 0px 10px;
-    padding-top: 4px;
-    height: 50px;
-    background-color: $background-light;
-    color: $font-color-light;
-    border-radius: $middle-border-radius;
-    border: $border-width solid $border-color-light;
-    box-sizing: border-box;
-    outline: none;
-    transition: box-shadow .35s;
+.form-input.dark .error {
+    @include color-dark;
 }
 
 .form-input input:focus {
